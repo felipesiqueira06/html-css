@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body>
+    <h1>TESTE DE FORM</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <p>
+            <label for="iano">Ano que você nasceu:</label>
+            <input type="number" name="ano" id="iano" min="1940" max="2024" oninput="isoma.innerHTML = Number(2024) - Number(iano.value)">
+        </p>
+
+        
+
+        <p>
+            <label for="isoma">Sua idade:</label>
+            <output id="isoma">0</output>
+        </p>
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
