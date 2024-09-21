@@ -35,7 +35,7 @@ span#burguer:hover{
 }
 
 menu{
-    display: none;
+    display: none; 
 }
 
 menu > ul{
@@ -45,7 +45,7 @@ menu > ul{
 
 menu a{
     padding: 10px;
-    display: block;
+    display: block; 
     text-decoration: none;
     background-color: rgb(83, 83, 83);
     color: white;
