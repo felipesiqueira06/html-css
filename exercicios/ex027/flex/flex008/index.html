@@ -9,6 +9,10 @@
             background-color: lightcoral;
             display: flex;
             flex-flow:row nowrap;
+            height: 400px;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            
 
         }
 
@@ -18,14 +22,29 @@
             flex-basis: 100px ;
             text-align: center;
         }
+
+        div#b{
+          align-self: flex-end;
+        }
+
+        div#c{
+          align-self: center;
+        }
+
+        div#d{
+          align-self: stretch;
+        }
+
+      
+
     </style>
 </head>
 <body>
   <div class="container">
-    <div class="item">Aaaaaaaaa</div>
-    <div class="item">Bbbbb</div>
-    <div class="item">C</div>
-    <div class="item">D</div>
+    <div class="item" id="a">Aaaaaaaaaa</div>
+    <div class="item" id="b">Bbbbb</div>
+    <div class="item" id="c">C</div>
+    <div class="item" id="d">D</div>
     <div class="item">E</div>
     <div class="item">Faaaaaaaaaaaa</div>
     <div class="item">G</div>
