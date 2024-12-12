@@ -26,6 +26,7 @@ header{
 
 header > h1{
     flex:0 0 200px ;
+    text-shadow: 2px 2px 0px rgba(31, 12, 12, 0.507);
 }
 
 header > nav{
