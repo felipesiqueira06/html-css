@@ -19,12 +19,25 @@ header{
     color: white;
     padding: 10px;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
+}
+
+header > h1{
+    flex:0 0 200px ;
+}
+
+header > nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
 }
 
 header > nav > a{
     background-color: black;
-    color: white;
+    color: rgb(216, 216, 216);
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
