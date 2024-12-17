@@ -8,13 +8,13 @@
 </head>
 <body>
     <header>
-        <h1>TESTANDO</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus repellendus officia expedita ea eveniet optio quos tempore commodi incidunt molestias in minus ipsa, natus esse neque, tempora laborum ab amet.</p>
+        <h1>Meus sites </h1>
+        <p>Essa página é para você conhecer mais sobre meus feitos, como sites que desenvolvi com HTML e CSS. Espero que goste, **</p>
     </header>
 
         <aside id="container">
             <div  class="opc">
-              <p onclick="clicar()">Opção 1 </p>
+              <p onclick="clicar()">Meu primeiro site **  </p>
             </div>
             <div class="opc">
                 <p>Opção 2</p>
@@ -32,10 +32,16 @@
                 <p>Opção 6</p>
               </div>
         </aside>
-    <main id="area">
-      <h1>ESCOlha alguma das opções</h1>
-        <iframe src="https://felipesiqueira06.github.io/saopaulo-projeto/" frameborder="0"></iframe></p>
+
+    <main >
+      <h1 id="h1">ESCOLHA ALGUMA OPÇÃO</h1>
+        <iframe id="area" src="https://felipesiqueira06.github.io/saopaulo-projeto/" frameborder="0" ></iframe></p>
     </main>
+
+    <footer>
+      
+        <p>se quer saber mais sobre esse site acesse o link.</p>
+    </footer>
     
     
 </body>
@@ -44,10 +50,18 @@
 
 <script>
     function clicar() {
-      if(area.style.display == 'none') {
-        area.style.display = 'block'
+      if(h1.style.display == 'none') {
+          h1.style.display ='block'
+        } else{
+          h1.style.display = 'none'
+        }
+        
+        
+      
+      if(area.style.display == 'block') {
+        area.style.display = 'none'
       } else{
-        area.style.display ='none'
+        area.style.display ='block'
       }
     }
 </script>

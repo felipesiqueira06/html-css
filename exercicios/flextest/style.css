@@ -26,21 +26,25 @@ aside#container{
     margin-left: 5px;
     margin-top: 10px;
     width: 200px;
+    height: 450px;
     border-radius: 8px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    
     overflow: hidden;
     background-color: black;
+    
 }
 
 div.opc{
+    font-size: 1.2em;
+    flex: auto;
     background-color: black;
     color: white;
     width: 100%;
     border: 1px solid white;
     cursor:pointer;
+    align-self: center;
 }
 
 div.opc:hover{
@@ -50,16 +54,25 @@ div.opc:hover{
 }
 
 main{
-    background-color: green;
+    
     margin-top: 10px;
     width: 70%;
-    transform: translate(215px,-250px);
+    transform: translate(215px,-460px);
+    
     
     
 }
 
-iframe{
+h1#h1{
+    display: block;
+}
+
+iframe#area{
    display: none;
     width:70vw;
-    height: 400px;
+    height: 490px;
+}
+
+p#footer{
+    transform: translate(250px);
 }
