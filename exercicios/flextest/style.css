@@ -83,12 +83,14 @@
         
     }
 
-    span{
+    span#seta{
         display: block;
+        margin: auto;
         margin-top: 10px;
         padding: 10px ;
         border: 2px solid white;
-        border-radius: 50%;
+        border-radius: 100%;
+        width: 80px;
     }
     
     h1#h1{
@@ -101,9 +103,30 @@
         width:70vw;
         height: 490px;
     }
+
+    iframe#a2{
+        display: none;
+        width: 70vw;
+        height: 490px;
+        transform: translate(-20px,0);
+    }
     
-    p#footer{
-        transform: translate(250px);
+    footer > p{
+        
+        font-size: 1.2em;
+        background-color: #4A4A55;  
+    }
+
+    footer > p > a{
+        text-decoration: none;
+        color: white;
+        text-decoration: underline;
+    }
+
+    footer > p > a:hover{
+        background-color: white;
+        color: #4A4A55;
+        border-radius: 5px;
     }
     }
 

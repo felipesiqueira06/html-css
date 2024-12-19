@@ -6,6 +6,7 @@
     <title>Teste de flex</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=line_start_arrow_notch" />
+   
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
               <p onclick="clicar()">Meu primeiro site S.P.F.C   </p>
             </div>
             <div class="opc">
-                <p>Opção 2</p>
+                <p onclick="opc2()">Página de login</p>
               </div>
               <div class="opc">
                 <p>Opção 3</p>
@@ -36,16 +37,17 @@
 
     <main >
       <h1 id="h1">ESCOLHA ALGUMA OPÇÃO <BR>
-        <span class="material-symbols-outlined">
+        <span id="seta" class="material-symbols-outlined">
           line_start_arrow_notch
           </span>
       </BR></h1>
         <iframe id="area" src="https://felipesiqueira06.github.io/saopaulo-projeto/" frameborder="0" ></iframe></p>
+        <iframe id="a2" src=" https://felipesiqueira06.github.io/projeto-login/" frameborder="0"></iframe>
     </main>
 
     <footer>
       
-        <p>se quer saber mais sobre esse site acesse o link.</p>
+        <p>Você pode ter mais acessos aos meus sites, se ficou interessado, através do meu repositório no meu <a href="https://github.com/felipesiqueira06?tab=repositories" target="_blank">GitHub</a> </p>
     </footer>
     
     
@@ -67,6 +69,35 @@
         area.style.display = 'none'
       } else{
         area.style.display ='block'
+      }
+
+      if(area.style.display == 'block'){
+        a2.style.display = 'none'
+      }
+
+      if(area.style.display =='block'){
+        h1.style.display = 'none'
+      }
+    }
+
+    function opc2() {
+      if(h1.style.display == 'none') {
+          h1.style.display ='block'
+        } else{
+          h1.style.display = 'none'
+        }
+
+      if(a2.style.display == 'block') {
+        a2.style.display = 'none'
+      } else{
+        a2.style.display ='block'
+      }
+
+      if(a2.style.display == 'block') {
+        area.style.display = 'none'
+      }
+      if(a2.style.display == 'block') {
+        h1.style.display = 'none'
       }
     }
 </script>
