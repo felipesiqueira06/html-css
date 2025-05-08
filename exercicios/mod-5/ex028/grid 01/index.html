@@ -8,20 +8,19 @@
         .container{
             display: grid;
             border: 5px solid gray;
-            height: 200px;
-            grid-template-columns : auto auto auto ;
-            grid-template-rows: auto auto auto ;
+            height: 350px;
+            grid-template : 100px 100px 100px  /  auto auto auto ;
             gap: 5px;
-            align-items: normal;
-            justify-items: normal;
-            align-content: normal;
-            justify-content: center;
+            place-items:  stretch center;
+            place-content: space-between center;
 
-            
+
         }
+        
         .item{
             border: 3px solid blue;
             padding: 5px;
+            width: 90px;
         }
     </style>
 </head>
@@ -34,7 +33,8 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
-        
+        <div class="item">H</div>
+        <div class="item">I</div>
     </div>
 </body>
 </html>
