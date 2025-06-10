@@ -9,15 +9,24 @@
 }
 
 .caixa1{
-    grid-area: 1/1/2/-1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: -1;
     background-color: grey;
 }
 .caixa2{
-    grid-area: 2/1/4/3;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: 1;
+    grid-column-end: 3;
     background-color: antiquewhite;
 }
 
 .caixa3{
-    grid-area: 2/3/4/5;
+    grid-row-start: 2;
+    grid-row-end: -1;
+    grid-column-start: 3;
+    grid-column-end: -1;
     background-color: rgb(213, 239, 255) ;
 }
